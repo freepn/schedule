@@ -44,10 +44,6 @@ import logging
 import random
 import time
 
-logging.basicConfig(
-    format='%(asctime)-15s - %(levelname)s (%(name)s) - %(message)s'
-)
-
 logger = logging.getLogger('schedule')
 
 
