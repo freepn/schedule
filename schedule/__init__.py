@@ -102,7 +102,7 @@ class Scheduler(object):
             runnable_jobs = self.jobs[:]
 
         logger.info('Running *all* %i jobs with %is delay in between',
-                    len(self.jobs), delay_seconds)
+                    len(runnable_jobs), delay_seconds)
         for job in sorted(runnable_jobs):
             self._run_job(job)
             time.sleep(delay_seconds)
