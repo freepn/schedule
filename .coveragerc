@@ -1,0 +1,3 @@
+[run]
+plugins =
+    coverage_python_version

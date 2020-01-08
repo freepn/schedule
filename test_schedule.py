@@ -542,18 +542,23 @@ class SchedulerTests(unittest.TestCase):
 
 
 class TimezoneTests(unittest.TestCase):
-    if sys.version_info > (3, 0, 0):
+    if sys.version_info < (3, 0, 0):
         from schedule.timezone import UTC
         utc = UTC()
 
-    def test_utc_is_normal(self):
+    def test_tzname(self):
+        fo = utc
+        self.assertIsInstance(fo, datetime.tzinfo)
+        dt = datetime.datetime.now()
+        self.assertIn("UTC", fo.tzname(dt))
+
+    def test_utcoffset(self):
         fo = utc
         self.assertIsInstance(fo, datetime.tzinfo)
         dt = datetime.datetime.now()
         self.assertEqual(fo.utcoffset(dt), datetime.timedelta(0))
-        assert "UTC" in fo.tzname(dt)
 
-    def test_utc_dst_is_dt(self):
+    def test_dst_is_datetime(self):
         fo = utc
         dt = datetime.datetime.now()
         if sys.version_info > (3, 0, 0):

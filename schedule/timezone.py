@@ -1,7 +1,7 @@
 import datetime
 
 
-class UTC(datetime.tzinfo):
+class UTC(datetime.tzinfo):  # pragma: PY2
     """tzinfo derived concrete class named "UTC" with offset of 0"""
     # can be changed to another timezone name/offset
     def __init__(self):
