@@ -12,9 +12,12 @@ import codecs
 from setuptools import setup
 
 
-SCHEDULE_VERSION = '0.6.0p2'
+SCHEDULE_VERSION = '0.6.0-2'
+# try making setuptools happy with PEP 440-compliant post version
+REL_TAG = SCHEDULE_VERSION.replace('-', 'p')
+
 SCHEDULE_DOWNLOAD_URL = (
-    'https://github.com/sarnold/schedule/tarball/' + SCHEDULE_VERSION
+    'https://github.com/sarnold/schedule/tarball/' + REL_TAG
 )
 
 

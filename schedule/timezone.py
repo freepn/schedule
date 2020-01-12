@@ -1,4 +1,4 @@
-import datetime
+import datetime  # pragma: PY2
 
 
 class UTC(datetime.tzinfo):  # pragma: PY2

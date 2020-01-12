@@ -39,7 +39,7 @@ Usage:
 """
 try:
     from collections.abc import Hashable
-except ImportError:
+except ImportError:  # pragma: PY2
     from collections import Hashable
 import datetime
 import functools
@@ -50,8 +50,8 @@ import time
 
 try:
     from datetime import timezone
-    utc = timezone.utc
-except ImportError:
+    utc = timezone.utc  # pragma: PY3
+except ImportError:  # pragma: PY2
     from schedule.timezone import UTC
     utc = UTC()
 
@@ -505,7 +505,7 @@ class Job(object):
         self.job_func = functools.partial(job_func, *args, **kwargs)
         try:
             functools.update_wrapper(self.job_func, job_func)
-        except AttributeError:
+        except AttributeError:  # pragma: PY2
             # job_funcs already wrapped by functools.partial won't have
             # __name__, __module__ or __doc__ and the update_wrapper()
             # call will fail.
