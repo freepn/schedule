@@ -9,8 +9,6 @@ python:
     - "3.8-dev"
     - "nightly"
 
-env: CODECOV_TOKEN="b63d594e-6c7a-4318-8353-e36f1c1d6f96"
-
 install: pip install tox-travis codecov
 
 before_install:

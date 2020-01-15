@@ -2,14 +2,23 @@ schedule
 ========
 
 
-.. image:: https://api.travis-ci.org/dbader/schedule.svg?branch=master
-        :target: https://travis-ci.org/dbader/schedule
+.. image:: https://img.shields.io/github/license/sarnold/schedule
+    :target: https://github.com/sarnold/schedule/blob/master/LICENSE
 
-.. image:: https://coveralls.io/repos/dbader/schedule/badge.svg?branch=master
-        :target: https://coveralls.io/r/dbader/schedule
+.. image:: https://img.shields.io/github/v/tag/sarnold/schedule?color=green&include_prereleases&label=latest%20release
+    :target: https://github.com/sarnold/schedule/releases
+    :alt: GitHub tag (latest SemVer pre-release)
 
-.. image:: https://img.shields.io/pypi/v/schedule.svg
-        :target: https://pypi.python.org/pypi/schedule
+.. image:: https://travis-ci.org/sarnold/schedule.svg?branch=master
+    :target: https://travis-ci.org/sarnold/schedule
+
+.. image:: https://img.shields.io/codecov/c/github/sarnold/schedule
+    :target: https://codecov.io/gh/sarnold/schedule
+    :alt: Codecov
+
+.. image:: https://img.shields.io/codeclimate/maintainability/sarnold/schedule
+    :target: https://codeclimate.com/github/sarnold/schedule
+
 
 Python job scheduling for humans.
 
