@@ -2,22 +2,22 @@ schedule
 ========
 
 
-.. image:: https://img.shields.io/github/license/sarnold/schedule
-    :target: https://github.com/sarnold/schedule/blob/master/LICENSE
+.. image:: https://img.shields.io/github/license/freepn/schedule
+    :target: https://github.com/freepn/schedule/blob/master/LICENSE
 
-.. image:: https://img.shields.io/github/v/tag/sarnold/schedule?color=green&include_prereleases&label=latest%20release
-    :target: https://github.com/sarnold/schedule/releases
+.. image:: https://img.shields.io/github/v/tag/freepn/schedule?color=green&include_prereleases&label=latest%20release
+    :target: https://github.com/freepn/schedule/releases
     :alt: GitHub tag (latest SemVer pre-release)
 
-.. image:: https://travis-ci.org/sarnold/schedule.svg?branch=master
-    :target: https://travis-ci.org/sarnold/schedule
+.. image:: https://travis-ci.org/freepn/schedule.svg?branch=master
+    :target: https://travis-ci.org/freepn/schedule
 
-.. image:: https://img.shields.io/codecov/c/github/sarnold/schedule
-    :target: https://codecov.io/gh/sarnold/schedule
+.. image:: https://img.shields.io/codecov/c/github/freepn/schedule
+    :target: https://codecov.io/gh/freepn/schedule
     :alt: Codecov
 
-.. image:: https://img.shields.io/codeclimate/maintainability/sarnold/schedule
-    :target: https://codeclimate.com/github/sarnold/schedule
+.. image:: https://img.shields.io/codeclimate/maintainability/freepn/schedule
+    :target: https://codeclimate.com/github/freepn/schedule
 
 
 Python job scheduling for humans.
@@ -31,6 +31,7 @@ Inspired by `Adam Wiggins' <https://github.com/adamwiggins>`_ article `"Rethinki
 
 Features
 --------
+
 - A simple to use API for scheduling jobs.
 - Very lightweight and no external dependencies.
 - Excellent test coverage.
