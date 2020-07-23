@@ -56,6 +56,9 @@ except ImportError:  # pragma: PY2
     utc = UTC()
 
 
+logger = logging.getLogger('schedule')
+
+
 class ScheduleError(Exception):
     """Base schedule exception"""
     pass
